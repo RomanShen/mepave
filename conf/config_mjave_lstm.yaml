@@ -1,0 +1,9 @@
+defaults:
+  - datamodule: mjave_bert
+  - lightningmodule: mjave_lstm
+  - training: mjave_bert
+  - trainer: mjave_bert
+
+hydra:
+  run:
+    dir: ./outputs/${now:%Y-%m-%d_%H-%M-%S}

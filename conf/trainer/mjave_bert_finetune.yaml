@@ -1,0 +1,5 @@
+# @package _group_
+gpus: 1
+fast_dev_run: False
+max_epochs: 52
+gradient_clip_val: 5.0

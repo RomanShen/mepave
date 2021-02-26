@@ -1,0 +1,6 @@
+# @package _group_
+data_dir: ../datasets/jave/
+vocab_path: ../datasets/jave/vocab/
+train_batch_size: 128
+val_batch_size: 128
+max_seq_length: 48

@@ -1,0 +1,16 @@
+# @package _group_
+txt_hidden_size: 768
+image_hidden_size: 2048
+num_attention_heads: 1
+attention_head_size: 200
+seq_length: ${datamodule.max_seq_length}
+vocab_bio_size: 55
+vocab_label_size: 28
+max_seq_length_no_pad: 46
+dropout_prob: 0.0
+vocab_path: ${datamodule.vocab_path}
+lr_classifier: 1e-4
+lr_bert: 5e-5
+adam_weight_decay: 0.01
+adam_epsilon: 1e-8
+freeze_bert_epoch: 50
