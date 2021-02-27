@@ -34,7 +34,7 @@ def run(cfg):
 
     # logger
     wandb_logger = WandbLogger(
-        name="mjave_bert_finetune" + datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S"),
+        name="mjave_bert_finetune_" + datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S"),
         save_dir=output_dir,
         project="mepave"
     )

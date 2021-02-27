@@ -44,7 +44,7 @@ def run(cfg):
     checkpoint_callback = ModelCheckpoint(
         monitor="validation/f1",
         dirpath=output_dir,
-        filename="mjave_lstm-{epoch:02d}-{valid_f1:.2f}",
+        filename="mjave_lstm-{epoch:02d}-{validation/f1:.2f}",
         save_top_k=3,
         mode="max",
     )
